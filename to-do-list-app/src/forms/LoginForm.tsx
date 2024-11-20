@@ -8,7 +8,7 @@ import Button from "../components/Button";
 import { useQueryClient } from "@tanstack/react-query";
 
 const schema = z.object({
-  email: z.string().email(),
+  email: z.string().min(1, { message: "Please enter the email for your account." }).email(),
   password: z
     .string()
     .min(1, { message: "Please enter the password for your account." }),
