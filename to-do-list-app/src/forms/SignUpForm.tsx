@@ -14,7 +14,7 @@ const schema = z.object({
   password: z
     .string()
     .min(8, { message: "Password must contain at least 8 characters" })
-    .max(20, { message: "Password must contain at least 20 characters" })
+    .max(20, { message: "The password can contain up to 20 characters" })
     .refine((password) => !/\s/.test(password), {
       message: "Password must not contain spaces",
     })
@@ -52,10 +52,15 @@ function SignUpForm() {
       if (response.data.length) throw new Error();
       const result = await axios.post("http://localhost:5000/users", {
         ...data,
-        tasks: [],
       });
       const user: UserInterface = result.data;
-      queryClient.setQueryData(["user"], user);
+      queryClient.setQueryData(["user"], {
+        id: user.id,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        password: user.password,
+      });
       navigate("/taskpad");
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {

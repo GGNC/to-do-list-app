@@ -8,7 +8,10 @@ import Button from "../components/Button";
 import { useQueryClient } from "@tanstack/react-query";
 
 const schema = z.object({
-  email: z.string().min(1, { message: "Please enter the email for your account." }).email(),
+  email: z
+    .string()
+    .min(1, { message: "Please enter the email for your account." })
+    .email(),
   password: z
     .string()
     .min(1, { message: "Please enter the password for your account." }),
@@ -35,7 +38,13 @@ function LoginForm() {
       if (!response.data.length || data.password !== user.password) {
         throw new Error();
       }
-      queryClient.setQueryData(["user"], user);
+      queryClient.setQueryData(["user"], {
+        id: user.id,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        email: user.email,
+        password: user.password,
+      });
       navigate("/taskpad");
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
