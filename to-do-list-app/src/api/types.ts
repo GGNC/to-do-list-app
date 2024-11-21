@@ -4,9 +4,19 @@ export interface UserInterface {
   lastName: string;
   email: string;
   password: string;
-  tasks?: TaskInterface[];
 }
 
 export interface TaskInterface {
-  title?: string;
+  id?: string;
+  userId: string;
+  taskNumber?: number;
+  title: string;
+  status:
+    | "Pending"
+    | "In Progress"
+    | "Completed"
+    | "Archived"
+    | "Review"
+    | "Cancelled"
+    | "On Hold";
 }
