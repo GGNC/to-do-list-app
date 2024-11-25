@@ -98,14 +98,14 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
           <Button
             type="submit"
             loading={isLoading}
-            className="w-[30px] sm:w-12  border-green-500 ring-1 ring-green-500 hover:ring-2 transition-all"
+            className="w-[50%] sm:w-auto px-1 border-green-500 ring-1 ring-green-500 hover:ring-2 transition-all"
           >
             <FaCheck color="22c55e" />
           </Button>
           <Button
             onClick={onDiscard}
             loading={isLoading}
-            className="w-[30px] sm:w-12  border-red-500 ring-1 ring-red-500 hover:ring-2 transition-all"
+            className="w-[50%] sm:w-auto px-1 border-red-500 ring-1 ring-red-500 hover:ring-2 transition-all"
           >
             <FaXmark color="ef4444" />
           </Button>

@@ -10,51 +10,51 @@
   ],
   "tasks": [
     {
-      "id": "fc6e",
+      "id": "d570",
       "userId": "c83e",
-      "title": "Write Unit Tests",
+      "title": "Frontend Bug Fixes",
       "status": "Pending",
       "taskNumber": 1
     },
     {
-      "id": "c1b3",
+      "id": "7047",
       "userId": "c83e",
-      "title": "Fix Navbar Bug",
+      "title": "Backend API Setup",
       "status": "In Progress",
       "taskNumber": 2
     },
     {
-      "id": "3cf9",
+      "id": "b8e1",
       "userId": "c83e",
-      "title": "Plan Team Meeting",
+      "title": "UI Bug Fix Meeting",
       "status": "On Hold",
       "taskNumber": 3
     },
     {
-      "id": "33ef",
+      "id": "a614",
       "userId": "c83e",
-      "title": "Review Codebase",
+      "title": "API Testing Suite",
       "status": "Completed",
       "taskNumber": 4
     },
     {
-      "id": "e748",
+      "id": "e3db",
       "userId": "c83e",
-      "title": "Submit Final Report",
+      "title": "Frontend API Design",
       "status": "Cancelled",
       "taskNumber": 5
     },
     {
-      "id": "e10c",
+      "id": "6625",
       "userId": "c83e",
-      "title": "Cancel Old Tickets",
+      "title": "Testing Backend Flow",
       "status": "Review",
       "taskNumber": 6
     },
     {
-      "id": "d00e",
+      "id": "fa5b",
       "userId": "c83e",
-      "title": "Fix API",
+      "title": "UI Design Feedback",
       "status": "Archived",
       "taskNumber": 7
     }

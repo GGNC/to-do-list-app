@@ -8,8 +8,8 @@ function LoginPage() {
   const [firstTime, setFirstTime] = useState(true);
   const navigate = useNavigate();
   return (
-    <div className="w-screen min-h-screen">
-      <div className="container min-w-96 h-full w-full mx-auto flex flex-col flex-nowrap justify-start items-center">
+    <div className="w-screen min-h-screen flex flex-col">
+      <div className="container min-w-96 h-full w-full mx-auto flex flex-grow flex-col flex-nowrap justify-start items-center">
         <div className="w-64 h-64 mt-20 m-1 bg-[#228be6] border-slate-200 border-2 rounded-full shadow-2xl shadow-gray-600 flex justify-center items-center">
           <img
             src={AppLogo}

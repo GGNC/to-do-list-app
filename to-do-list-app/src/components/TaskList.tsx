@@ -43,7 +43,7 @@ function TaskList({ user }: TaskListProps) {
   return (
     <div className="container mt-6 min-h-[400px] px-4 py-4 bg-white rounded-t-3xl rounded-b-xl shadow-2xl">
       <div className="flex justify-between items-center mt-1 mb-4 px-2 md:px-4 lg:px-8">
-        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <SearchBar setSearchTerm={setSearchTerm} />
         <Button
           warning
           rounded
