@@ -65,7 +65,7 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
       className="w-[80%] flex justify-center items-center"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="w-[43.75%] flex flex-col justify-center items-center">
+      <div className="w-[43.75%] flex flex-col justify-center items-center my-1">
         {errors.title && (
           <p className="text-red-600 text-[8px]">{errors.title.message}</p>
         )}
@@ -75,7 +75,7 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
           className="w-[80%] text-[6px] lg:text-sm px-2 py-1 lg:px-4 lg:py-2 rounded-2xl border-2 border-slate-200"
         />
       </div>
-      <div className="w-[31.25%] flex flex-col justify-center items-center">
+      <div className="w-[31.25%] flex flex-col justify-center items-center my-1">
         {errors.status && (
           <p className="text-red-600 text-[8px]">{errors.status.message}</p>
         )}
