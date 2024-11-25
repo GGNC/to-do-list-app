@@ -95,7 +95,7 @@ function Task({ task }: TaskProps) {
           <div className="w-[20%] flex justify-center items-center ">
             <Button
               onClick={() => setEditMode(true)}
-              className="w-[30px] lg:w-12 border-blue-500 ring-1 ring-blue-500 hover:ring-2 transition-all"
+              className="border-blue-500 ring-1 ring-blue-500 hover:ring-2 transition-all"
             >
               <FaPencil color="3b82f6" />
             </Button>
@@ -105,7 +105,7 @@ function Task({ task }: TaskProps) {
       <div className="w-[10%] flex justify-center items-center ">
         <Button
           onClick={handleRemoveTask}
-          className="w-[30px] sm:w-12 border-gray-500 ring-1 ring-gray-500 hover:ring-2 transition-all"
+          className="border-gray-500 ring-1 ring-gray-500 hover:ring-2 transition-all"
         >
           <FaRegTrashCan color="6b7280" />
         </Button>

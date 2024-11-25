@@ -65,7 +65,7 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
       className="w-[80%] flex justify-center items-center"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="w-[43.75%] flex flex-col justify-center items-center">
+      <div className="w-[43.75%] flex flex-col justify-center items-center my-1">
         {errors.title && (
           <p className="text-red-600 text-[8px]">{errors.title.message}</p>
         )}
@@ -75,7 +75,7 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
           className="w-[80%] text-[6px] lg:text-sm px-2 py-1 lg:px-4 lg:py-2 rounded-2xl border-2 border-slate-200"
         />
       </div>
-      <div className="w-[31.25%] flex flex-col justify-center items-center">
+      <div className="w-[31.25%] flex flex-col justify-center items-center my-1">
         {errors.status && (
           <p className="text-red-600 text-[8px]">{errors.status.message}</p>
         )}
@@ -98,14 +98,14 @@ function TaskEditForm({ task, onDiscard }: TaskEditFormProps) {
           <Button
             type="submit"
             loading={isLoading}
-            className="w-[30px] sm:w-12  border-green-500 ring-1 ring-green-500 hover:ring-2 transition-all"
+            className="w-[50%] sm:w-auto px-1 border-green-500 ring-1 ring-green-500 hover:ring-2 transition-all"
           >
             <FaCheck color="22c55e" />
           </Button>
           <Button
             onClick={onDiscard}
             loading={isLoading}
-            className="w-[30px] sm:w-12  border-red-500 ring-1 ring-red-500 hover:ring-2 transition-all"
+            className="w-[50%] sm:w-auto px-1 border-red-500 ring-1 ring-red-500 hover:ring-2 transition-all"
           >
             <FaXmark color="ef4444" />
           </Button>

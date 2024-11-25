@@ -1,4 +1,62 @@
 {
-  "users": [],
-  "tasks": []
+  "users": [
+    {
+      "id": "c83e",
+      "firstName": "Gokhan",
+      "lastName": "Genc",
+      "email": "g@mail.com",
+      "password": "Qwer1234!"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "d570",
+      "userId": "c83e",
+      "title": "Frontend Bug Fixes",
+      "status": "Pending",
+      "taskNumber": 1
+    },
+    {
+      "id": "7047",
+      "userId": "c83e",
+      "title": "Backend API Setup",
+      "status": "In Progress",
+      "taskNumber": 2
+    },
+    {
+      "id": "b8e1",
+      "userId": "c83e",
+      "title": "UI Bug Fix Meeting",
+      "status": "On Hold",
+      "taskNumber": 3
+    },
+    {
+      "id": "a614",
+      "userId": "c83e",
+      "title": "API Testing Suite",
+      "status": "Completed",
+      "taskNumber": 4
+    },
+    {
+      "id": "e3db",
+      "userId": "c83e",
+      "title": "Frontend API Design",
+      "status": "Cancelled",
+      "taskNumber": 5
+    },
+    {
+      "id": "6625",
+      "userId": "c83e",
+      "title": "Testing Backend Flow",
+      "status": "Review",
+      "taskNumber": 6
+    },
+    {
+      "id": "fa5b",
+      "userId": "c83e",
+      "title": "UI Design Feedback",
+      "status": "Archived",
+      "taskNumber": 7
+    }
+  ]
 }

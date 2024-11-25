@@ -55,11 +55,7 @@ function SignUpForm() {
       });
       const user: UserInterface = result.data;
       queryClient.setQueryData(["user"], {
-        id: user.id,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        email: user.email,
-        password: user.password,
+        ...user,
       });
       navigate("/taskpad");
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -73,7 +69,7 @@ function SignUpForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="min-w-96 m-8 p-6 px-8 pb-4 flex flex-col flex-nowrap justify-start items-center gap-1 bg-white border-2 rounded-3xl"
+      className="min-w-96 m-8 mb-4 p-6 px-8 pb-4 flex flex-col flex-nowrap justify-start items-center gap-1 bg-white border-2 rounded-3xl"
     >
       <div className="w-full flex flex-wrap justify-between items-center">
         <div className="w-5/12 m-0 p-0 flex flex-col justify-center items-center">

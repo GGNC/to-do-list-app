@@ -124,7 +124,7 @@ function TaskForm({ user, onClose }: TaskFormProps) {
             rounded
             className="text-xs md:text-sm lg:text-lg xl:text-xl text-white bg-red-500 font-extrabold border-4 border-slate-200 ring-4 ring-red-700 shadow-2xl hover:ring-8 hover:ring-red-500 hover:shadow-3xl transition-all"
           >
-            {windowSize.width < 500 ? <FaRotateLeft size={35} /> : "Reset Task"}
+            {windowSize.width < 500 ? <FaRotateLeft size={20} /> : "Reset Task"}
           </Button>
           <Button
             type="submit"
@@ -132,7 +132,7 @@ function TaskForm({ user, onClose }: TaskFormProps) {
             className="text-xs md:text-sm lg:text-lg xl:text-xl text-white bg-orange-500 font-extrabold border-4 border-slate-200 ring-4 ring-orange-700 shadow-2xl hover:ring-8 hover:ring-orange-500 hover:shadow-3xl transition-all"
           >
             {windowSize.width < 500 ? (
-              <FaFileCirclePlus size={35} />
+              <FaFileCirclePlus size={20} />
             ) : (
               "Add Task"
             )}
