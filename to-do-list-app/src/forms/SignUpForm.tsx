@@ -55,11 +55,7 @@ function SignUpForm() {
       });
       const user: UserInterface = result.data;
       queryClient.setQueryData(["user"], {
-        id: user.id,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        email: user.email,
-        password: user.password,
+        ...user
       });
       navigate("/taskpad");
       // eslint-disable-next-line @typescript-eslint/no-unused-vars

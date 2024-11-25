@@ -1,4 +1,62 @@
 {
-  "users": [],
-  "tasks": []
+  "users": [
+    {
+      "id": "c83e",
+      "firstName": "Gokhan",
+      "lastName": "Genc",
+      "email": "g@mail.com",
+      "password": "Qwer1234!"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "fc6e",
+      "userId": "c83e",
+      "title": "Write Unit Tests",
+      "status": "Pending",
+      "taskNumber": 1
+    },
+    {
+      "id": "c1b3",
+      "userId": "c83e",
+      "title": "Fix Navbar Bug",
+      "status": "In Progress",
+      "taskNumber": 2
+    },
+    {
+      "id": "3cf9",
+      "userId": "c83e",
+      "title": "Plan Team Meeting",
+      "status": "On Hold",
+      "taskNumber": 3
+    },
+    {
+      "id": "33ef",
+      "userId": "c83e",
+      "title": "Review Codebase",
+      "status": "Completed",
+      "taskNumber": 4
+    },
+    {
+      "id": "e748",
+      "userId": "c83e",
+      "title": "Submit Final Report",
+      "status": "Cancelled",
+      "taskNumber": 5
+    },
+    {
+      "id": "e10c",
+      "userId": "c83e",
+      "title": "Cancel Old Tickets",
+      "status": "Review",
+      "taskNumber": 6
+    },
+    {
+      "id": "d00e",
+      "userId": "c83e",
+      "title": "Fix API",
+      "status": "Archived",
+      "taskNumber": 7
+    }
+  ]
 }
